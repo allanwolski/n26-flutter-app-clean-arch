@@ -60,5 +60,6 @@ jobs:
     # Create Github Release.
     - uses: ncipollo/release-action@v1
       with:
+        tag: v1.0.0
         artifacts: "build/app/outputs/bundle/release/*.aab"
         token: ${{ secrets.RELEASES_TOKEN }}
